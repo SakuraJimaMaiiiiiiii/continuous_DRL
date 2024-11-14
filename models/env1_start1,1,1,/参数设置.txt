@@ -1,0 +1,8 @@
+ # 总奖励
+   reward = 10 * distance_reward + 0.5 * direction_reward  
+
+  if is_collision:
+   reward -= 1  # 碰撞惩罚    
+
+ if current_distance < self.delta:
+   reward += 5  # 到达目标的奖励 

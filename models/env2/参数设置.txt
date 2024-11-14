@@ -1,0 +1,19 @@
+td3: 
+
+
+# 总奖励
+   reward = 15 * distance_reward + 1 * direction_reward  
+
+  if is_collision:
+   reward -= 5  # 碰撞惩罚    
+
+ if current_distance < self.delta:
+   reward += 10  # 到达目标的奖励 
+
+
+ppo : 
+if current_distance < self.delta:
+   reward += 15  # 到达目标的奖励 
+
+        # 总奖励
+        reward = 17 * distance_reward + 2 * direction_reward  # <1  
